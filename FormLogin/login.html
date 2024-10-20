@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN AG MEMBER</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("AG.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #7c0c46;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fcf3f3;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid #000000;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #de1282;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: hsl(332, 76%, 45%);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="image-container">
+            <img src="team.png" alt="Login Image">
+        </div>
+        <form class="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Masukkan Username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan Password" required>
+            </div>
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
